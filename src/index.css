@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url(assets/gilroy-font/Gilroy-Light.otf) format('opentype');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
