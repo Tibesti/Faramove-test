@@ -12,6 +12,7 @@ module.exports = {
         'lgMax': {'max': '1023px'},
         'mdMax': {'max': '767px'},
         'smMax': {'max': '639px'},
+        'xsMax': {'max': '399px'},
       }},
     fontFamily: {
       'gilroy': ['Gilroy', 'sans-serif']

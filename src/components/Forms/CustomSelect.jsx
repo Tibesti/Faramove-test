@@ -18,7 +18,7 @@ const CustomSelect = ({label, required, textColor, ...props}) => {
             <select 
                 {...field} 
                 {...props} 
-                className={`w-full border mt-2 border-solid py-2.5 px-4 rounded-lg focus:outline-none ${meta.touched && meta.error ? 'border-errors':'border-grey mb-6'} ${textColor}`}
+                className={`w-full border mt-2 border-solid py-2.5 px-4 rounded-lg bg-white focus:outline-none ${meta.touched && meta.error ? 'border-errors':'border-grey mb-6'} ${textColor}`}
             />
             <img src={arrow} alt="arrow" className='absolute top-[45px] right-[10px]' />
             {

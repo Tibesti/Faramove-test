@@ -42,19 +42,19 @@ function App() {
       {/* Start of top bar */}
       <div className='border-b-2 border-b-solid border-b-soft-stroke'>
         <div className='flex py-6 items-center container px-5'>
-          <div className={`flex items-center cursor-pointer ${view!=='property'&&'smMax:hidden'}`}>
-            <h5 className={`w-12 smMax:text-xl smMax:w-10 smMax:h-10 smMax:mr-1 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='property'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>1</h5>
-            <h5 className={`text-xl smMax:text-lg smMax:leading-6 m-0 font-semibold ${view==='property'?'text-primary':'text-grey'}`}>PROPERTY<br/>DETAILS</h5>
+          <div className={`flex items-center cursor-pointer`}>
+            <h5 className={`w-12 smMax:text-base smMax:pt-0 smMax:w-7 smMax:h-7 smMax:mr-1 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='property'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>1</h5>
+            <h5 className={`text-xl smMax:text-sm smMax:leading-4 xsMax:hidden m-0 font-semibold ${view==='property'?'text-primary':'text-grey'}`}>PROPERTY<br/>DETAILS</h5>
           </div>
-          <hr className='w-28 border-2 border-grey bg-grey mx-6 smMax:hidden'/>
-          <div className={`flex items-center cursor-pointer ${view!=='address'&&'smMax:hidden'}`}>
-            <h5 className={`smMax:text-xl smMax:w-10 smMax:h-10 smMax:mr-1 w-12 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='address'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>2</h5>
-            <h5 className={`text-xl m-0 smMax:text-lg smMax:leading-6 font-semibold ${view==='address'?'text-primary':'text-grey'}`}>ADDRESS<br/>DETAILS</h5>
+          <hr className='w-28 border-2 border-grey bg-grey mx-6 smMax:mx-3'/>
+          <div className={`flex items-center cursor-pointer`}>
+            <h5 className={`smMax:text-base smMax:pt-0 smMax:w-7 smMax:h-7 smMax:mr-1 w-12 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='address'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>2</h5>
+            <h5 className={`text-xl m-0 smMax:text-sm smMax:leading-4 xsMax:hidden font-semibold ${view==='address'?'text-primary':'text-grey'}`}>ADDRESS<br/>DETAILS</h5>
           </div>
-          <hr className='w-28 border-2 border-grey bg-grey mx-6 smMax:hidden'/>
-          <div className={`flex items-center cursor-pointer ${view!=='photos'&&'smMax:hidden'}`}>
-            <h5 className={`w-12 smMax:text-xl smMax:w-10 smMax:h-10 smMax:mr-1 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='photos'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>3</h5>
-            <h5 className={`text-xl m-0 smMax:text-lg smMax:leading-6 font-semibold ${view==='photos'?'text-primary':'text-grey'}`}>PHOTOS</h5>
+          <hr className='w-28 border-2 border-grey bg-grey mx-6 smMax:mx-3'/>
+          <div className={`flex items-center cursor-pointer`}>
+            <h5 className={`w-12 smMax:text-base smMax:pt-0 smMax:w-7 smMax:h-7 smMax:mr-1 h-12 m-0 rounded-full text-center border-2 border-solid text-2xl pt-1 mr-2.5 ${view==='photos'?' text-white bg-primary border-primary':' bg-white border-grey text-grey'}`}>3</h5>
+            <h5 className={`text-xl m-0 smMax:text-sm smMax:leading-4 xsMax:hidden font-semibold ${view==='photos'?'text-primary':'text-grey'}`}>PHOTOS</h5>
           </div>
         </div>
       </div>
