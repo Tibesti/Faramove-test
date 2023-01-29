@@ -73,24 +73,24 @@ const Photos = ({setView, logData}) => {
             <p className='text-center '>REQUIRED</p>
             <form onSubmit={handleSubmit}>
                 <input type="file" accept="image/*" multiple="multiple" id='input_file' onChange={(e)=>validate(e.target.files)} hidden />
-                <div className="border-grey border-2 sm:w-full rounded-md text-center py-6 border-dashed w-[300px] mt-6 mx-auto block" ref={drop}>
+                <div className="border-grey border-2 smMax:w-full rounded-md text-center py-6 border-dashed w-[300px] mt-6 mx-auto block" ref={drop}>
                     <img src={upload} alt='upload' className='mx-auto block mb-4' />
                     <p>Drop or <span className="text-primary underline cursor-pointer" onClick={()=>document.getElementById('input_file').click()}>Upload</span> image an here</p>
                 </div>
                 <p className='text-center text-errors'>{error}</p>
-                <div className='flex flex-wrap justify-between my-20 sm:my-10 sm:block'>
+                <div className='flex flex-wrap justify-between my-20 smMax:my-10 smMax:block'>
                     {
                         [...Array(5)].map((e, i) =>(
-                            <div key={i} className='border-grey sm:w-full md:w-[48%] lg:w-[32%] overflow-hidden border-2 border-dashed mb-10 w-[230px] h-[150px] rounded-md'>
+                            <div key={i} className='border-grey smMax:w-full mdMax:w-[48%] lgMax:w-[32%] overflow-hidden border-2 border-dashed mb-10 w-[230px] h-[150px] rounded-md'>
                                 {uploaded?.[i] && <img src={URL.createObjectURL(uploaded[i])} className='w-full' alt="" />}
                             </div>
                         ))
                     }
                 </div>
                 {/* next form */}
-                <div className='flex justify-center sm:block'>
-                    <BackButton action='Back' addClass='mx-[2%] sm:w-full sm:mx-0 sm:mb-[10px]' link="/address" />
-                    <PrimaryButton action='Log Data' addClass='mx-[2%] sm:w-full sm:mx-0' />
+                <div className='flex justify-center smMax:block'>
+                    <BackButton action='Back' addClass='mx-[2%] smMax:w-full smMax:mx-0 smMax:mb-[10px]' link="/address" />
+                    <PrimaryButton action='Log Data' addClass='mx-[2%] smMax:w-full smMax:mx-0' />
                 </div>
             </form>
         </div>

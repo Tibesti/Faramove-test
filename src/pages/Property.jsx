@@ -96,13 +96,14 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                     <Form>
                         <div className="container py-12 px-5">
                             <h1 className='text-3xl font-bold text-title-text mb-6'>Property Details</h1>
-                            <div className='flex justify-between sm:block'>
-                                <div className='w-[48%] sm:w-full'>
+                            <div className='flex justify-between smMax:block'>
+                                <div className='w-[48%] smMax:w-full'>
                                     <CustomSelect
                                         label='Property Category'
                                         required={true}
                                         name='propertyCategory'
                                         type='text'
+                                        textColor={props.values.propertyCategory===''?'text-grey':'text-black'}
                                         placeholder='Property Category'
                                     >
                                         <option>Property Type</option>
@@ -116,6 +117,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                         name='propertyName'
                                         type='text'
                                         placeholder='Property Name'
+                                        textColor={props.values.propertyName===''?'text-grey':'text-black'}
                                     >
                                         <option>Property Name</option>
                                         <option value="Abeokuta Realty">Abeokuta Realty</option>
@@ -128,6 +130,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                         name='noOfBeds'
                                         type='number'
                                         placeholder='Number of Beds'
+                                        textColor={props.values.noOfBeds===''?'text-grey':'text-black'}
                                     >
                                         <option>0</option>
                                         <option value={1}>1</option>
@@ -141,20 +144,22 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                         required={true}
                                         name='bluraFinance'
                                         type='text'
-                                        placeholder='Is this a Blura finance property (Yes/No)* '
+                                        placeholder='Is this a Blura finance property (Yes/No)'
+                                        textColor={props.values.bluraFinance===''?'text-grey':'text-black'}
                                     >
                                         <option></option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </CustomSelect>
                                 </div>
-                                <div className='w-[48%] sm:w-full'>
+                                <div className='w-[48%] smMax:w-full'>
                                     <CustomSelect
                                         label='Property Condition'
                                         required={true}
                                         name='propertyCondition'
                                         type='text'
                                         placeholder='Property Condition'
+                                        textColor={props.values.propertyCondition===''?'text-grey':'text-black'}
                                     >
                                         <option>Property Condition</option>
                                         <option value="good">Good</option>
@@ -184,8 +189,8 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                 <div className='container py-12 px-5'>
                                     {/* Blura Finance part */}
                                     <h1 className='text-3xl font-bold text-title-text mb-6'>Blura Finance</h1>
-                                    <div className='flex justify-between sm:block'>
-                                        <div className='w-[48%] sm:w-full'>
+                                    <div className='flex justify-between smMax:block'>
+                                        <div className='w-[48%] smMax:w-full'>
                                             <CustomInput
                                                 label='Amount to be paid (Part Payment)'
                                                 required={false}
@@ -199,6 +204,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                                 name='spreadDuration'
                                                 type='text'
                                                 placeholder=''
+                                                textColor={props.values.spreadDuration===''?'text-grey':'text-black'}
                                             >
                                                 <option></option>
                                                 <option value="3 months">3 months</option>
@@ -213,7 +219,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                                 placeholder='₦0'
                                             />
                                         </div>
-                                        <div className='w-[48%] sm:w-full'>
+                                        <div className='w-[48%] smMax:w-full'>
                                             <CustomTextbox
                                                 label='Description'
                                                 required={false}
@@ -236,7 +242,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                                     {
                                         amenities.map((item) => (
                                             <div 
-                                                className={`w-40 sm:w-[48%] h-24 mt-3.5 pt-1.5 rounded-lg border-2 cursor-pointer ${selectedAmenities.includes(item.name)?'border-amenity-green':'border-border-grey'}`}
+                                                className={`w-40 smMax:w-[48%] h-24 mt-3.5 pt-1.5 rounded-lg border-2 cursor-pointer ${selectedAmenities.includes(item.name)?'border-amenity-green':'border-border-grey'}`}
                                                 key={item.id}
                                                 onClick={()=>addAmenity(item.name)}
                                             >

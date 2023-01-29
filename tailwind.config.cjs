@@ -5,7 +5,14 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        '2xlMax': {'max': '1535px'},
+        'xlMax': {'max': '1279px'},
+        'lgMax': {'max': '1023px'},
+        'mdMax': {'max': '767px'},
+        'smMax': {'max': '639px'},
+      }},
     fontFamily: {
       'gilroy': ['Gilroy', 'sans-serif']
     },
@@ -25,13 +32,6 @@ module.exports = {
     container: {
       center: true,
     },
-    screens: {
-      '2xl': {'max': '1535px'},
-      'xl': {'max': '1279px'},
-      'lg': {'max': '1023px'},
-      'md': {'max': '767px'},
-      'sm': {'max': '639px'},
-    }
   },
   plugins: [],
 }
