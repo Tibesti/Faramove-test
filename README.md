@@ -3,7 +3,7 @@ This repository contains the code for the frontend assessment test
 
 Project was initialized using vite
 
-All styling was done with Tailwind CSS only
+All styling was done with Tailwind CSS only, except where necessary
 
 Form validation done with FORMIK and YUP
 
