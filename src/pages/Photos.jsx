@@ -90,7 +90,7 @@ const Photos = ({setView, logData}) => {
                 {/* next form */}
                 <div className='flex justify-center smMax:block'>
                     <BackButton action='Back' addClass='mx-[2%] smMax:w-full smMax:mx-0 smMax:mb-[10px]' link="/address" />
-                    <PrimaryButton action='Log Data' addClass='mx-[2%] smMax:w-full smMax:mx-0' />
+                    <PrimaryButton action='Log Data' addClass='mx-[2%] smMax:w-full smMax:mx-0' disabled={uploaded===null} />
                 </div>
             </form>
         </div>

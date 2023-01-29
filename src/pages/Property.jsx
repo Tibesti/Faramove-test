@@ -257,7 +257,7 @@ const Property = ({propertyValues, setPropertyValues, setView}) => {
                             </div>
                         </div>
                         {/* next form */}
-                        <PrimaryButton action='Next' addClass='block m-auto' />
+                        <PrimaryButton action='Next' addClass='block m-auto' disabled={!(props.isValid && selectedAmenities.length>0)} />
                     </Form>
                 )}
             </Formik>

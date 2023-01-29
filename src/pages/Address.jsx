@@ -78,7 +78,7 @@ const Address = ({addressValues, setAddressValues, setView}) => {
                             {/* next form */}
                             <div className='flex justify-center smMax:block'>
                                 <BackButton action='Back' addClass='mx-[2%] smMax:w-full smMax:mx-0 smMax:mb-[10px]' link='/' />
-                                <PrimaryButton action='Next' addClass='mx-[2%] smMax:w-full smMax:mx-0' />
+                                <PrimaryButton action='Next' addClass='mx-[2%] smMax:w-full smMax:mx-0' disabled={!props.isValid} />
                             </div>
                         </div>
                     </Form>
